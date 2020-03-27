@@ -8,6 +8,7 @@
 var container = document.getElementById('biglietto');
 var bottoneGenera = document.getElementById('bottoneGenera');
 var bottoneAnnulla = document.getElementById('bottoneAnnulla');
+var reset = document.getElementById('reset');
 
 
 
@@ -69,14 +70,15 @@ bottoneGenera.addEventListener('click',
 bottoneAnnulla.addEventListener('click',
     function() {
         // Inseriamo valori nella pagina
-        document.getElementById('nome').innerHTML = '';
-        document.getElementById('km').innerHTML = '';
-        document.getElementById('fascia-eta').innerHTML = minorenne;
-        document.getElementById('nome-passeggero').innerHTML = '';
-        document.getElementById('offerta-applicata').innerHTML = '';
-        document.getElementById('carrozza').innerHTML = '';
-        document.getElementById('codice-cp').innerHTML = '';
-        document.getElementById('costo').innerHTML = '';
+        document.getElementById('nome').value = '';
+        document.getElementById('km').value = '';
+        document.getElementById('fascia-eta').value = '';
+        document.getElementById('nome-passeggero').value = '';
+        document.getElementById('offerta-applicata').value = '';
+        document.getElementById('carrozza').value = '';
+        document.getElementById('codice-cp').value = '';
+        document.getElementById('costo').value = '';
+
 
         // Mostra biglietto
         container.className = 'hidden';
