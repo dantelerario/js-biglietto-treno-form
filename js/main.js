@@ -69,7 +69,7 @@ bottoneGenera.addEventListener('click',
 // Reset biglietto
 bottoneAnnulla.addEventListener('click',
     function() {
-        // Inseriamo valori nella pagina
+        // Reset valori nella pagina
         document.getElementById('nome').value = '';
         document.getElementById('km').value = '';
         document.getElementById('fascia-eta').value = '';
@@ -80,7 +80,7 @@ bottoneAnnulla.addEventListener('click',
         document.getElementById('costo').value = '';
 
 
-        // Mostra biglietto
+        // Nascondi biglietto
         container.className = 'hidden';
     }
 );
